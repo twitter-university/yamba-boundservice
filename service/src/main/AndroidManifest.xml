@@ -1,0 +1,17 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.twitter.university.yamba.service">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application android:allowBackup="true"
+        android:label="@string/app_name"
+        android:icon="@drawable/ic_launcher">
+        <!-- TODO: enforce with a android:permission="...USE_SERVICE" !!!!!!! -->
+        <service android:name=".YambaService">
+            <intent-filter>
+                <action android:name="com.twitter.university.yamba.service.YambaService"/>
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>
